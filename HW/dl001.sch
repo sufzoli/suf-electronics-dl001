@@ -1,0 +1,179 @@
+EESchema Schematic File Version 2
+LIBS:dl001-rescue
+LIBS:suf
+LIBS:conn
+LIBS:device
+LIBS:power
+LIBS:transistors
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dl001-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "30 aug 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM324-RESCUE-dl001 U?
+U 1 1 5402350C
+P 4100 2750
+F 0 "U?" H 4150 2950 60  0000 C CNN
+F 1 "TLC2264" H 4250 2550 50  0000 C CNN
+F 2 "" H 4100 2750 60  0000 C CNN
+F 3 "" H 4100 2750 60  0000 C CNN
+	1    4100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324-RESCUE-dl001 U?
+U 2 1 54023631
+P 5600 2800
+F 0 "U?" H 5650 3000 60  0000 C CNN
+F 1 "LM324" H 5750 2600 50  0000 C CNN
+F 2 "" H 5600 2800 60  0000 C CNN
+F 3 "" H 5600 2800 60  0000 C CNN
+	2    5600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324-RESCUE-dl001 U?
+U 3 1 54023640
+P 7550 3400
+F 0 "U?" H 7600 3600 60  0000 C CNN
+F 1 "LM324" H 7700 3200 50  0000 C CNN
+F 2 "" H 7550 3400 60  0000 C CNN
+F 3 "" H 7550 3400 60  0000 C CNN
+	3    7550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7812 U?
+U 1 1 54023653
+P 1950 2450
+F 0 "U?" H 2100 2254 60  0000 C CNN
+F 1 "LM7812" H 1950 2650 60  0000 C CNN
+F 2 "~" H 1950 2450 60  0000 C CNN
+F 3 "~" H 1950 2450 60  0000 C CNN
+	1    1950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRFZ44VBF Q?
+U 1 1 5402368E
+P 6600 2750
+F 0 "Q?" H 6600 2602 40  0000 R CNN
+F 1 "IRFZ44VBF" H 6600 2899 40  0000 R CNN
+F 2 "TO220" H 6421 2851 29  0000 C CNN
+F 3 "~" H 6600 2750 60  0000 C CNN
+	1    6600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 540236F2
+P 6700 3500
+F 0 "R?" H 6700 3425 40  0000 C CNN
+F 1 "R" H 6700 3575 40  0000 C CNN
+F 2 "~" H 6700 3500 60  0000 C CNN
+F 3 "~" H 6700 3500 60  0000 C CNN
+	1    6700 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-dl001 #PWR?
+U 1 1 54023704
+P 6700 3850
+F 0 "#PWR?" H 6700 3850 30  0001 C CNN
+F 1 "GND" H 6700 3780 30  0001 C CNN
+F 2 "" H 6700 3850 60  0000 C CNN
+F 3 "" H 6700 3850 60  0000 C CNN
+	1    6700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5402374A
+P 7050 4100
+F 0 "R?" H 7050 4025 40  0000 C CNN
+F 1 "R" H 7050 4175 40  0000 C CNN
+F 2 "~" H 7050 4100 60  0000 C CNN
+F 3 "~" H 7050 4100 60  0000 C CNN
+	1    7050 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54023759
+P 7400 3900
+F 0 "R?" H 7400 3825 40  0000 C CNN
+F 1 "R" H 7400 3975 40  0000 C CNN
+F 2 "~" H 7400 3900 60  0000 C CNN
+F 3 "~" H 7400 3900 60  0000 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3500 7050 3900
+Wire Wire Line
+	7050 3900 7200 3900
+Wire Wire Line
+	7600 3900 8050 3900
+Wire Wire Line
+	8050 3900 8050 3400
+$Comp
+L GND-RESCUE-dl001 #PWR?
+U 1 1 5402376E
+P 7050 4400
+F 0 "#PWR?" H 7050 4400 30  0001 C CNN
+F 1 "GND" H 7050 4330 30  0001 C CNN
+F 2 "" H 7050 4400 60  0000 C CNN
+F 3 "" H 7050 4400 60  0000 C CNN
+	1    7050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4300 7050 4400
+Wire Wire Line
+	6700 3700 6700 3850
+Wire Wire Line
+	5100 3300 7050 3300
+Wire Wire Line
+	6700 2950 6700 3300
+Wire Wire Line
+	6400 2800 6100 2800
+Wire Wire Line
+	5100 2900 5100 3300
+Connection ~ 6700 3300
+$EndSCHEMATC
